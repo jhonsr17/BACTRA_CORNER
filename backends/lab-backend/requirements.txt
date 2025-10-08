@@ -1,0 +1,18 @@
+# --- Core API ---
+fastapi==0.115.0
+uvicorn==0.30.6
+
+# --- Supabase client ---
+supabase==2.6.0
+
+# --- Environment variables ---
+python-dotenv==1.0.1
+
+# --- HTTP requests (para enviar casos a MED) ---
+requests==2.32.3
+
+# --- Data validation ---
+pydantic==2.9.2
+
+# --- CORS (para conexión con frontend LAB) ---
+starlette==0.38.2

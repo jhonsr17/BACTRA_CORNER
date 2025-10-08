@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Animated border utility for CTA input */
+.animated-border {
+	background: linear-gradient(90deg, #FF6B81, #7C3AED, #60A5FA);
+	background-size: 200% 200%;
+	animation: borderShift 4s ease infinite;
+	border-radius: 9999px;
+	padding: 2px;
+}
+
+@keyframes borderShift {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+
