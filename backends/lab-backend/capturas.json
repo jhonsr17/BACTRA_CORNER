@@ -1,0 +1,98 @@
+[
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251104_191030.jpg",
+        "path": "received_images\\muestra_000_20251104_191030.jpg",
+        "timestamp": "2025-11-04T19:10:30.842747"
+    },
+    {
+        "sample_id": "muestra_001",
+        "filename": "muestra_001_20251104_191035.jpg",
+        "path": "received_images\\muestra_001_20251104_191035.jpg",
+        "timestamp": "2025-11-04T19:10:35.589431"
+    },
+    {
+        "sample_id": "muestra_002",
+        "filename": "muestra_002_20251104_191040.jpg",
+        "path": "received_images\\muestra_002_20251104_191040.jpg",
+        "timestamp": "2025-11-04T19:10:40.044651"
+    },
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251105_112540.jpg",
+        "path": "received_images\\muestra_000_20251105_112540.jpg",
+        "timestamp": "2025-11-05T11:25:40.050757"
+    },
+    {
+        "sample_id": "muestra_001",
+        "filename": "muestra_001_20251105_112545.jpg",
+        "path": "received_images\\muestra_001_20251105_112545.jpg",
+        "timestamp": "2025-11-05T11:25:45.050853"
+    },
+    {
+        "sample_id": "muestra_002",
+        "filename": "muestra_002_20251105_112549.jpg",
+        "path": "received_images\\muestra_002_20251105_112549.jpg",
+        "timestamp": "2025-11-05T11:25:49.963519"
+    },
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251105_112806.jpg",
+        "path": "received_images\\muestra_000_20251105_112806.jpg",
+        "timestamp": "2025-11-05T11:28:07.000332"
+    },
+    {
+        "sample_id": "muestra_001",
+        "filename": "muestra_001_20251105_112811.jpg",
+        "path": "received_images\\muestra_001_20251105_112811.jpg",
+        "timestamp": "2025-11-05T11:28:11.875527"
+    },
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251105_114244.jpg",
+        "path": "received_images\\muestra_000_20251105_114244.jpg",
+        "timestamp": "2025-11-05T11:42:44.167103"
+    },
+    {
+        "sample_id": "muestra_001",
+        "filename": "muestra_001_20251105_114248.jpg",
+        "path": "received_images\\muestra_001_20251105_114248.jpg",
+        "timestamp": "2025-11-05T11:42:49.001239"
+    },
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251105_115310.jpg",
+        "path": "received_images\\muestra_000_20251105_115310.jpg",
+        "timestamp": "2025-11-05T11:53:10.248469"
+    },
+    {
+        "sample_id": "muestra_001",
+        "filename": "muestra_001_20251105_115315.jpg",
+        "path": "received_images\\muestra_001_20251105_115315.jpg",
+        "timestamp": "2025-11-05T11:53:15.154626"
+    },
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251105_142908.jpg",
+        "path": "received_images\\muestra_000_20251105_142908.jpg",
+        "timestamp": "2025-11-05T14:29:08.922938"
+    },
+    {
+        "sample_id": "muestra_001",
+        "filename": "muestra_001_20251105_142913.jpg",
+        "path": "received_images\\muestra_001_20251105_142913.jpg",
+        "timestamp": "2025-11-05T14:29:13.865081"
+    },
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251105_142956.jpg",
+        "path": "received_images\\muestra_000_20251105_142956.jpg",
+        "timestamp": "2025-11-05T14:29:56.914174"
+    },
+    {
+        "sample_id": "muestra_001",
+        "filename": "muestra_001_20251105_143001.jpg",
+        "path": "received_images\\muestra_001_20251105_143001.jpg",
+        "timestamp": "2025-11-05T14:30:01.902319"
+    }
+]
