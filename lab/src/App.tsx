@@ -10,8 +10,8 @@ export default function App () {
 		<Routes>
 			<Route path='/' element={<Layout />}> 
 				<Route index element={<NewCase />} />
-				<Route path='capture/:id' element={<Capture />} />
-				<Route path='result/:id' element={<Result />} />
+				<Route path="/capture/:id" element={<Capture />} />
+				<Route path="/result/:id" element={<Result />} />
 			</Route>
 		</Routes>
 	)

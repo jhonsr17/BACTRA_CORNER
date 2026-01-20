@@ -1,1 +1,3 @@
 # Nodenode_modules/**/node_modules/# Builds / outputsbuild/dist/**/build/**/dist/.next/.cache/# Python.venv/**/.venv/__pycache__/**/__pycache__/*.pyc# Env files.env**/.env.env.*# Logsnpm-debug.log*yarn-debug.log*yarn-error.log*pnpm-debug.log*# OS.DS_StoreThumbs.db# IDE.vscode/.idea/# Coveragecoverage/**/coverage/# Misc*.local
+share/
+

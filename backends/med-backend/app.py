@@ -7,14 +7,12 @@ import os
 import requests
 import json
 
-# Cargar .env
 load_dotenv(override=True)
 
-from supabase import create_client, Client  # supabase==2.6.0
+from supabase import create_client, Client  
 
 app = FastAPI()
 
-# CORS para frontend MED (colocar antes de definir rutas)
 origins_env = os.getenv('ALLOWED_ORIGINS')
 if origins_env:
     origins = [o.strip() for o in origins_env.split(',') if o.strip()]
@@ -112,13 +110,11 @@ def approve_case(body: ApproveIn):
     return {'message': 'Case approved', 'case': data}
 
 
-# GET /med/case/{id} – obtiene caso y llama a n8n para diagnóstico
 @app.get('/med/case/{case_id}')
 def get_case(case_id: str):
     if not supabase:
         raise HTTPException(status_code=503, detail='Supabase not configured')
 
-    # 1) Buscar caso en Supabase
     try:
         res = (
             supabase
@@ -135,7 +131,6 @@ def get_case(case_id: str):
 
     case = res.data[0]
 
-    # 2) Llamar n8n si está configurado
     diagnosis: str | dict | None = None
     n8n_url = os.getenv('N8N_DIAGNOSIS_URL')
     if n8n_url:
@@ -150,7 +145,6 @@ def get_case(case_id: str):
             r.raise_for_status()
             if 'application/json' in (r.headers.get('content-type') or '').lower():
                 body = r.json()
-                # Limpieza cuando n8n responde código en bloque: { output: "```json\n{...}\n```" }
                 output_text = None
                 if isinstance(body, dict) and isinstance(body.get('output'), str):
                     output_text = body.get('output')
@@ -163,7 +157,6 @@ def get_case(case_id: str):
                     except Exception:
                         diagnosis = {'error': cleaned}
                 else:
-                    # Si ya viene JSON útil
                     if isinstance(body.get('diagnosis'), (dict, list, str)):
                         diagnosis = body.get('diagnosis')
                     elif isinstance(body.get('summary'), (dict, list, str)):
@@ -171,7 +164,6 @@ def get_case(case_id: str):
                     else:
                         diagnosis = body
             else:
-                # Texto plano: intentar parsear si parece JSON, si no dejar texto
                 txt = r.text or ''
                 fenced = txt.strip().strip('`').strip()
                 if fenced.lower().startswith('json'):

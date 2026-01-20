@@ -1,105 +1,154 @@
-import React, { useEffect, useMemo, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
-import Button from '../components/Button'
-import { supabase } from '../lib/supabase'
+// src/pages/Capture.tsx
+import React, { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import "./Capture.css";
 
-type Test = 'POS' | 'NEG' | 'ND'
-type Species = 'E_COLI' | 'SHIGELLA' | 'INCONCLUSO'
+export default function Capture() {
+  const { id } = useParams();
+  const navigate = useNavigate();
 
-type CaseRow = {
-    id: string
-    patient_name: string
-    patient_ref: string
-    indole: Test
-    motility: Test
-    predicted: Species
+  const [file, setFile] = useState<File | null>(null);
+  const [filePreview, setFilePreview] = useState<string | null>(null);
+  const [savedImage, setSavedImage] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  // Seleccionar archivo manualmente
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const f = e.target.files?.[0] || null;
+    setFile(f);
+    setSavedImage(null);
+    setFilePreview(f ? URL.createObjectURL(f) : null);
+  };
+
+  // Capturar imagen desde OpenMV
+  const handleTakePhoto = async () => {
+    setLoading(true);
+    try {
+      const resp = await fetch("http://127.0.0.1:8000/capture_from_openmv/", {
+        method: "POST",
+      });
+      const json = await resp.json();
+
+      if (resp.ok && json.saved_as) {
+        setSavedImage(json.saved_as);
+        if (json.image_base64) {
+          setFilePreview(`data:image/jpeg;base64,${json.image_base64}`);
+        } else if (json.image_url) {
+          setFilePreview(json.image_url);
+        }
+        alert("Foto capturada correctamente");
+      } else {
+        alert("Error capturando imagen: " + JSON.stringify(json));
+      }
+    } catch (error: any) {
+      alert("No se pudo comunicar con la cámara: " + error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Subir imagen al backend
+  const handleUploadImage = async () => {
+    if (!file && !savedImage) {
+      return alert("Primero selecciona o toma una foto 📸");
+    }
+
+    setLoading(true);
+    const formData = new FormData();
+    formData.append("sample_id", id || "sin_id");
+
+    if (file) {
+      formData.append("file", file);
+    } else if (savedImage) {
+      formData.append("saved_image", savedImage);
+    }
+
+    try {
+      const resp = await fetch("http://127.0.0.1:8000/upload_image/", {
+        method: "POST",
+        body: formData,
+      });
+      const json = await resp.json();
+
+      if (resp.ok) {
+        alert("Imagen subida correctamente");
+        // 🚀 Redirigir al resultado
+        navigate(`/result/${id}`);
+      } else {
+        alert("Error en el servidor: " + JSON.stringify(json));
+      }
+    } catch (error: any) {
+      alert("Error subiendo la imagen: " + error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Volver a tomar / cambiar imagen
+  const handleRetake = () => {
+    setFile(null);
+    setFilePreview(null);
+    setSavedImage(null);
+  };
+
+  return (
+    <div className="space-y-6 rounded-2xl border bg-white p-6 shadow-md">
+      <h1 className="text-2xl font-bold text-gray-800">Capturar muestra</h1>
+      <p className="text-gray-600">
+        ID de muestra: <strong>{id}</strong>
+      </p>
+
+      {!filePreview && (
+        <div className="space-y-4">
+          <button
+            onClick={() => document.getElementById("file-input")?.click()}
+            className="btn-primary w-full"
+            disabled={loading}
+          >
+            Seleccionar Imagen
+          </button>
+
+          <input
+            id="file-input"
+            type="file"
+            accept="image/*"
+            onChange={handleFileChange}
+            className="hidden"
+          />
+
+          <button
+            onClick={handleTakePhoto}
+            disabled={loading}
+            className="btn-primary w-full"
+          >
+            {loading ? "Tomando foto..." : "Tomar Foto con Cámara"}
+          </button>
+        </div>
+      )}
+
+      {filePreview && (
+        <div className="space-y-4">
+          <img
+            src={filePreview}
+            alt="preview"
+            className="rounded-lg border h-64 w-full object-cover shadow-md"
+          />
+
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <button onClick={handleRetake} className="btn-secondary flex-1">
+              Volver a tomar
+            </button>
+
+            <button
+              onClick={handleUploadImage}
+              disabled={loading}
+              className="btn-primary flex-1"
+            >
+              {loading ? "Subiendo..." : "Subir Imagen"}
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
-
-const predictSpecies = (indole: Test, motility: Test): Species => {
-    if (indole === 'POS' && motility === 'POS') return 'E_COLI'
-    if (indole === 'NEG' && motility === 'NEG') return 'SHIGELLA'
-    return 'INCONCLUSO'
-}
-
-export default function Capture () {
-	const { id } = useParams()
-	const navigate = useNavigate()
-	const [row, setRow] = useState<CaseRow | null>(null)
-	const [filePreview, setFilePreview] = useState<string | null>(null)
-
-	useEffect(() => {
-		const fetchCase = async () => {
-			const { data, error } = await supabase
-				.from('cases')
-				.select('*')
-				.eq('id', id)
-				.single()
-			if (error) {
-				alert(`Error cargando caso: ${error.message}`)
-				return
-			}
-			setRow(data as CaseRow)
-		}
-		fetchCase()
-	}, [id])
-
-    const species = useMemo(() => {
-        if (!row) return 'INCONCLUSO' as Species
-        return predictSpecies(row.indole, row.motility)
-    }, [row])
-
-	const handleSimulate = async () => {
-        const { error } = await supabase
-            .from('cases')
-            .update({ predicted: species, status: 'analyzed' })
-			.eq('id', id)
-		if (error) {
-			alert(`Error actualizando especie: ${error.message}`)
-			return
-		}
-		navigate(`/result/${id}`)
-	}
-
-	if (!row) return <p>Cargando…</p>
-
-	return (
-		<div className='space-y-6 rounded-2xl border bg-white p-6 shadow-sm'>
-			<div>
-				<h1 className='text-2xl font-bold'>Captura</h1>
-				<p className='text-sm text-gray-600'>Paciente: {row.patient_name} — Ref: {row.patient_ref}</p>
-			</div>
-
-			<div className='grid gap-4 sm:grid-cols-2'>
-				<div>
-					<label className='block text-sm font-medium'>Archivo (opcional)</label>
-					<input
-						type='file'
-						accept='image/*'
-						onChange={(e) => {
-							const f = e.target.files?.[0]
-							if (!f) return setFilePreview(null)
-							const url = URL.createObjectURL(f)
-							setFilePreview(url)
-						}}
-						className='mt-1 w-full rounded-md border border-gray-300 px-3 py-2'
-					/>
-				</div>
-				<div className='rounded-lg border bg-gray-50 p-4'>
-					<p className='text-sm'>INDOL: <strong>{row.indole}</strong></p>
-					<p className='text-sm'>MOTILIDAD: <strong>{row.motility}</strong></p>
-					<p className='mt-2 text-sm'>Especie simulada: <span className='font-semibold'>{species}</span></p>
-				</div>
-			</div>
-
-			{filePreview && (
-				<div className='overflow-hidden rounded-xl border'>
-					<img src={filePreview} alt='preview' className='h-64 w-full object-cover' />
-				</div>
-			)}
-
-			<Button onClick={handleSimulate}>Simular detección</Button>
-		</div>
-	)
-}
-
-

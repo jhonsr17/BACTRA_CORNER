@@ -94,5 +94,615 @@
         "filename": "muestra_001_20251105_143001.jpg",
         "path": "received_images\\muestra_001_20251105_143001.jpg",
         "timestamp": "2025-11-05T14:30:01.902319"
+    },
+    {
+        "sample_id": "muestra_test",
+        "filename": "muestra_test_20251108_195438.jpg",
+        "path": "received_images\\muestra_test_20251108_195438.jpg",
+        "timestamp": "2025-11-08T19:54:38.085143",
+        "bacteria": "string",
+        "notes": ""
+    },
+    {
+        "sample_id": "muestra_test2",
+        "filename": "muestra_test2_20251108_195759.jpg",
+        "path": "received_images\\muestra_test2_20251108_195759.jpg",
+        "timestamp": "2025-11-08T19:57:59.096300",
+        "bacteria": "E_COLI",
+        "notes": ""
+    },
+    {
+        "sample_id": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161",
+        "filename": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201504.jpg",
+        "path": "received_images\\a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201504.jpg",
+        "timestamp": "2025-11-08T20:15:04.097310",
+        "bacteria": "INCONCLUSO",
+        "notes": ""
+    },
+    {
+        "sample_id": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161",
+        "filename": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201513.jpg",
+        "path": "received_images\\a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201513.jpg",
+        "timestamp": "2025-11-08T20:15:13.098828",
+        "bacteria": "INCONCLUSO",
+        "notes": ""
+    },
+    {
+        "sample_id": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161",
+        "filename": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201518.jpg",
+        "path": "received_images\\a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201518.jpg",
+        "timestamp": "2025-11-08T20:15:18.122180",
+        "bacteria": "INCONCLUSO",
+        "notes": ""
+    },
+    {
+        "sample_id": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161",
+        "filename": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201523.jpg",
+        "path": "received_images\\a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201523.jpg",
+        "timestamp": "2025-11-08T20:15:23.139939",
+        "bacteria": "INCONCLUSO",
+        "notes": ""
+    },
+    {
+        "sample_id": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161",
+        "filename": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201528.jpg",
+        "path": "received_images\\a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201528.jpg",
+        "timestamp": "2025-11-08T20:15:28.159022",
+        "bacteria": "INCONCLUSO",
+        "notes": ""
+    },
+    {
+        "sample_id": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161",
+        "filename": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201533.jpg",
+        "path": "received_images\\a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201533.jpg",
+        "timestamp": "2025-11-08T20:15:33.183446",
+        "bacteria": "INCONCLUSO",
+        "notes": ""
+    },
+    {
+        "sample_id": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161",
+        "filename": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201538.jpg",
+        "path": "received_images\\a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201538.jpg",
+        "timestamp": "2025-11-08T20:15:38.192352",
+        "bacteria": "INCONCLUSO",
+        "notes": ""
+    },
+    {
+        "sample_id": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161",
+        "filename": "a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201543.jpg",
+        "path": "received_images\\a14369e3-3b5f-43a0-9aae-40f4a5fa9161_20251108_201543.jpg",
+        "timestamp": "2025-11-08T20:15:43.212377",
+        "bacteria": "INCONCLUSO",
+        "notes": ""
+    },
+    {
+        "sample_id": "6901fb84-a27a-40a3-8d0d-2b461463941b",
+        "filename": "6901fb84-a27a-40a3-8d0d-2b461463941b_20251108_201548.jpg",
+        "path": "received_images\\6901fb84-a27a-40a3-8d0d-2b461463941b_20251108_201548.jpg",
+        "timestamp": "2025-11-08T20:15:48.228850",
+        "bacteria": "INCONCLUSO",
+        "notes": ""
+    },
+    {
+        "sample_id": "muestra_001",
+        "filename": "muestra_001_20251109_114848.jpg",
+        "path": "received_images\\muestra_001_20251109_114848.jpg",
+        "timestamp": "2025-11-09T11:48:48.256877"
+    },
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251109_114852.jpg",
+        "path": "received_images\\muestra_000_20251109_114852.jpg",
+        "timestamp": "2025-11-09T11:48:52.523005"
+    },
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251109_115014.jpg",
+        "path": "received_images\\muestra_000_20251109_115014.jpg",
+        "timestamp": "2025-11-09T11:50:14.745929"
+    },
+    {
+        "sample_id": "muestra_001",
+        "filename": "muestra_001_20251109_115019.jpg",
+        "path": "received_images\\muestra_001_20251109_115019.jpg",
+        "timestamp": "2025-11-09T11:50:19.490267"
+    },
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251109_123553.jpg",
+        "path": "received_images\\muestra_000_20251109_123553.jpg",
+        "timestamp": "2025-11-09T12:35:53.843673"
+    },
+    {
+        "sample_id": "muestra_000",
+        "filename": "muestra_000_20251109_123621.jpg",
+        "path": "received_images\\muestra_000_20251109_123621.jpg",
+        "timestamp": "2025-11-09T12:36:21.112057"
+    },
+    {
+        "sample_id": "muestra_001",
+        "filename": "muestra_001_20251109_123626.jpg",
+        "path": "received_images\\muestra_001_20251109_123626.jpg",
+        "timestamp": "2025-11-09T12:36:26.098878"
+    },
+    {
+        "sample_id": "muestra_002",
+        "filename": "muestra_002_20251109_123630.jpg",
+        "path": "received_images\\muestra_002_20251109_123630.jpg",
+        "timestamp": "2025-11-09T12:36:30.508421"
+    },
+    {
+        "sample_id": "test_ui",
+        "filename": "test_ui_20251109_125752.jpg",
+        "path": "received_images\\test_ui_20251109_125752.jpg",
+        "timestamp": "2025-11-09T12:57:52.586546"
+    },
+    {
+        "sample_id": "test_backend",
+        "filename": "test_backend_20251109_150021.jpg",
+        "path": "received_images\\test_backend_20251109_150021.jpg",
+        "timestamp": "2025-11-09T15:00:21.089803"
+    },
+    {
+        "sample_id": "test_backend2",
+        "filename": "test_backend2_20251109_150248.jpg",
+        "path": "received_images\\test_backend2_20251109_150248.jpg",
+        "timestamp": "2025-11-09T15:02:48.325704"
+    },
+    {
+        "sample_id": "a7980bab-333e-4397-a85b-83cb5dff03c4",
+        "filename": "a7980bab-333e-4397-a85b-83cb5dff03c4_20251109_150944.jpg",
+        "path": "received_images\\a7980bab-333e-4397-a85b-83cb5dff03c4_20251109_150944.jpg",
+        "timestamp": "2025-11-09T15:09:44.383972"
+    },
+    {
+        "sample_id": "b716cb5e-0270-42be-b52b-343289e394d6",
+        "filename": "b716cb5e-0270-42be-b52b-343289e394d6_20251109_151049.jpg",
+        "path": "received_images\\b716cb5e-0270-42be-b52b-343289e394d6_20251109_151049.jpg",
+        "timestamp": "2025-11-09T15:10:49.043723"
+    },
+    {
+        "sample_id": "00dbe59d-a4a8-47b0-8e80-53d1f2da9689",
+        "filename": "00dbe59d-a4a8-47b0-8e80-53d1f2da9689_20251109_164522.jpg",
+        "path": "received_images\\00dbe59d-a4a8-47b0-8e80-53d1f2da9689_20251109_164522.jpg",
+        "timestamp": "2025-11-09T16:45:23.169973"
+    },
+    {
+        "sample_id": "229c8ed3-f215-4839-8d1c-077fb18cf1ac",
+        "filename": "229c8ed3-f215-4839-8d1c-077fb18cf1ac_20251109_215544.jpg",
+        "path": "received_images\\229c8ed3-f215-4839-8d1c-077fb18cf1ac_20251109_215544.jpg",
+        "timestamp": "2025-11-09T21:55:44.275409"
+    },
+    {
+        "sample_id": "openmv_181110",
+        "filename": "openmv_20251111_181110.jpg",
+        "path": "received_images\\openmv_20251111_181110.jpg",
+        "timestamp": "2025-11-11T18:11:15.186127",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "openmv_182407",
+        "filename": "openmv_20251111_182407.jpg",
+        "path": "received_images\\openmv_20251111_182407.jpg",
+        "timestamp": "2025-11-11T18:24:10.456118",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "d8d42a44-e853-45cd-a292-5d96096c7b42",
+        "filename": "openmv_20251111_182407.jpg",
+        "path": "received_images\\openmv_20251111_182407.jpg",
+        "timestamp": "2025-11-11T18:24:13.474650",
+        "bacteria": "INCONCLUSO",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_184012",
+        "filename": "openmv_20251111_184011.jpg",
+        "path": "received_images\\openmv_20251111_184011.jpg",
+        "timestamp": "2025-11-11T18:40:14.793577",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "e77341ed-6933-42b7-9795-23b7e80d5bc9",
+        "filename": "openmv_20251111_184011.jpg",
+        "path": "received_images\\openmv_20251111_184011.jpg",
+        "timestamp": "2025-11-11T18:40:19.293254",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_184124",
+        "filename": "openmv_20251111_184124.jpg",
+        "path": "received_images\\openmv_20251111_184124.jpg",
+        "timestamp": "2025-11-11T18:41:27.173403",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "f32489e2-e5d4-49f4-af50-136db0b9eccd",
+        "filename": "openmv_20251111_184124.jpg",
+        "path": "received_images\\openmv_20251111_184124.jpg",
+        "timestamp": "2025-11-11T18:41:29.360468",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_190740",
+        "filename": "openmv_20251111_190740.jpg",
+        "path": "received_images\\openmv_20251111_190740.jpg",
+        "timestamp": "2025-11-11T19:07:44.934938",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "266a1707-4b63-40bb-9289-36b67d467abe",
+        "filename": "openmv_20251111_190740.jpg",
+        "path": "received_images\\openmv_20251111_190740.jpg",
+        "timestamp": "2025-11-11T19:08:00.784247",
+        "bacteria": "INCONCLUSO",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_191205",
+        "filename": "openmv_20251111_191205.jpg",
+        "path": "received_images\\openmv_20251111_191205.jpg",
+        "timestamp": "2025-11-11T19:12:07.953163",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "a26428c0-3b95-4a05-9063-e2e3cbcaa090",
+        "filename": "openmv_20251111_191205.jpg",
+        "path": "received_images\\openmv_20251111_191205.jpg",
+        "timestamp": "2025-11-11T19:12:20.410767",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_191634",
+        "filename": "openmv_20251111_191634.jpg",
+        "path": "received_images\\openmv_20251111_191634.jpg",
+        "timestamp": "2025-11-11T19:16:38.357676",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "b50b63cc-5417-4b75-87f7-fb4f674c4065",
+        "filename": "openmv_20251111_191634.jpg",
+        "path": "received_images\\openmv_20251111_191634.jpg",
+        "timestamp": "2025-11-11T19:16:47.499742",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_192004",
+        "filename": "openmv_20251111_192004.jpg",
+        "path": "received_images\\openmv_20251111_192004.jpg",
+        "timestamp": "2025-11-11T19:20:06.795234",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "f614a902-0274-4b5e-bca9-509cae924e56",
+        "filename": "openmv_20251111_192004.jpg",
+        "path": "received_images\\openmv_20251111_192004.jpg",
+        "timestamp": "2025-11-11T19:20:23.862286",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_192042",
+        "filename": "openmv_20251111_192042.jpg",
+        "path": "received_images\\openmv_20251111_192042.jpg",
+        "timestamp": "2025-11-11T19:20:45.811510",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "f614a902-0274-4b5e-bca9-509cae924e56",
+        "filename": "openmv_20251111_192042.jpg",
+        "path": "received_images\\openmv_20251111_192042.jpg",
+        "timestamp": "2025-11-11T19:20:55.463985",
+        "bacteria": "INCONCLUSO",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_192329",
+        "filename": "openmv_20251111_192329.jpg",
+        "path": "received_images\\openmv_20251111_192329.jpg",
+        "timestamp": "2025-11-11T19:23:34.911606",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "f614a902-0274-4b5e-bca9-509cae924e56",
+        "filename": "openmv_20251111_192329.jpg",
+        "path": "received_images\\openmv_20251111_192329.jpg",
+        "timestamp": "2025-11-11T19:23:49.266374",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_192927",
+        "filename": "openmv_20251111_192927.jpg",
+        "path": "received_images\\openmv_20251111_192927.jpg",
+        "timestamp": "2025-11-11T19:29:30.795121",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "f614a902-0274-4b5e-bca9-509cae924e56",
+        "filename": "openmv_20251111_192927.jpg",
+        "path": "received_images\\openmv_20251111_192927.jpg",
+        "timestamp": "2025-11-11T19:29:38.169892",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_193904",
+        "filename": "openmv_20251111_193904.jpg",
+        "path": "received_images\\openmv_20251111_193904.jpg",
+        "timestamp": "2025-11-11T19:39:08.450089",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "3cc11e64-b38c-47db-b7c8-9d434d311f1e",
+        "filename": "openmv_20251111_193904.jpg",
+        "path": "received_images\\openmv_20251111_193904.jpg",
+        "timestamp": "2025-11-11T19:39:15.216572",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_211034",
+        "filename": "openmv_20251111_211034.jpg",
+        "path": "received_images\\openmv_20251111_211034.jpg",
+        "timestamp": "2025-11-11T21:10:36.798915",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "9ca3e859-70ae-40d4-8fe4-241291c8e599",
+        "filename": "openmv_20251111_211034.jpg",
+        "path": "received_images\\openmv_20251111_211034.jpg",
+        "timestamp": "2025-11-11T21:10:47.683316",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_212235",
+        "filename": "openmv_20251111_212235.jpg",
+        "path": "received_images\\openmv_20251111_212235.jpg",
+        "timestamp": "2025-11-11T21:22:38.456585",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "openmv_212722",
+        "filename": "openmv_20251111_212722.jpg",
+        "path": "received_images\\openmv_20251111_212722.jpg",
+        "timestamp": "2025-11-11T21:27:25.047156",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "openmv_212735",
+        "filename": "openmv_20251111_212735.jpg",
+        "path": "received_images\\openmv_20251111_212735.jpg",
+        "timestamp": "2025-11-11T21:27:38.107610",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "2c35488b-dadd-4eb3-96a5-627f3c97b825",
+        "filename": "openmv_20251111_212735.jpg",
+        "path": "received_images\\openmv_20251111_212735.jpg",
+        "timestamp": "2025-11-11T21:27:45.111439",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_213158",
+        "filename": "openmv_20251111_213158.jpg",
+        "path": "received_images\\openmv_20251111_213158.jpg",
+        "timestamp": "2025-11-11T21:31:59.390859",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "472a01cb-a5f4-48a4-8053-14581565dcbe",
+        "filename": "openmv_20251111_213158.jpg",
+        "path": "received_images\\openmv_20251111_213158.jpg",
+        "timestamp": "2025-11-11T21:32:10.594768",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_100457",
+        "filename": "openmv_20251112_100457.jpg",
+        "path": "received_images\\openmv_20251112_100457.jpg",
+        "timestamp": "2025-11-12T10:04:58.081121",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "openmv_100507",
+        "filename": "openmv_20251112_100506.jpg",
+        "path": "received_images\\openmv_20251112_100506.jpg",
+        "timestamp": "2025-11-12T10:05:07.289745",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "fa5fec8c-1a69-405a-bbe2-58be5f8e9d5f",
+        "filename": "openmv_20251112_100506.jpg",
+        "path": "received_images\\openmv_20251112_100506.jpg",
+        "timestamp": "2025-11-12T10:05:20.630748",
+        "bacteria": "INCONCLUSO",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_100938",
+        "filename": "openmv_20251112_100938.jpg",
+        "path": "received_images\\openmv_20251112_100938.jpg",
+        "timestamp": "2025-11-12T10:09:39.474128",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "bf7bb684-b28f-4bdf-ac99-7e209d038659",
+        "filename": "openmv_20251112_100938.jpg",
+        "path": "received_images\\openmv_20251112_100938.jpg",
+        "timestamp": "2025-11-12T10:09:44.832607",
+        "bacteria": "INCONCLUSO",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_101133",
+        "filename": "openmv_20251112_101133.jpg",
+        "path": "received_images\\openmv_20251112_101133.jpg",
+        "timestamp": "2025-11-12T10:11:34.579141",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "35ab4a62-7b14-4ce0-b988-33475383d177",
+        "filename": "openmv_20251112_101133.jpg",
+        "path": "received_images\\openmv_20251112_101133.jpg",
+        "timestamp": "2025-11-12T10:11:39.709633",
+        "bacteria": "INCONCLUSO",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_115822",
+        "filename": "openmv_20251121_115822.jpg",
+        "path": "received_images\\openmv_20251121_115822.jpg",
+        "timestamp": "2025-11-21T11:58:24.079831",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "f6dcee22-3720-4171-8375-d3b1bbb0d7c2",
+        "filename": "openmv_20251121_115822.jpg",
+        "path": "received_images\\openmv_20251121_115822.jpg",
+        "timestamp": "2025-11-21T11:58:29.521459",
+        "bacteria": "INCONCLUSO",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_120120",
+        "filename": "openmv_20251121_120120.jpg",
+        "path": "received_images\\openmv_20251121_120120.jpg",
+        "timestamp": "2025-11-21T12:01:21.397088",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "openmv_120134",
+        "filename": "openmv_20251121_120134.jpg",
+        "path": "received_images\\openmv_20251121_120134.jpg",
+        "timestamp": "2025-11-21T12:01:35.191600",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "openmv_120214",
+        "filename": "openmv_20251121_120214.jpg",
+        "path": "received_images\\openmv_20251121_120214.jpg",
+        "timestamp": "2025-11-21T12:02:14.574829",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "openmv_120228",
+        "filename": "openmv_20251121_120228.jpg",
+        "path": "received_images\\openmv_20251121_120228.jpg",
+        "timestamp": "2025-11-21T12:02:28.369990",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "ffa3318b-586d-4fb4-a35e-276e50ef25af",
+        "filename": "openmv_20251121_120228.jpg",
+        "path": "received_images\\openmv_20251121_120228.jpg",
+        "timestamp": "2025-11-21T12:02:32.382573",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_131201",
+        "filename": "openmv_20251121_131201.jpg",
+        "path": "received_images\\openmv_20251121_131201.jpg",
+        "timestamp": "2025-11-21T13:12:02.482089",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "openmv_131415",
+        "filename": "openmv_20251121_131415.jpg",
+        "path": "received_images\\openmv_20251121_131415.jpg",
+        "timestamp": "2025-11-21T13:14:17.003145",
+        "bacteria": "INCONCLUSO",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "890e73bf-ab48-46e8-a9c0-105e0572ee6e",
+        "filename": "openmv_20251121_131415.jpg",
+        "path": "received_images\\openmv_20251121_131415.jpg",
+        "timestamp": "2025-11-21T13:14:21.093586",
+        "bacteria": "INCONCLUSO",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_131718",
+        "filename": "openmv_20251121_131718.jpg",
+        "path": "received_images\\openmv_20251121_131718.jpg",
+        "timestamp": "2025-11-21T13:17:19.718182",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "07f5f20a-b77f-462c-9a83-581b2e61421b",
+        "filename": "openmv_20251121_131718.jpg",
+        "path": "received_images\\openmv_20251121_131718.jpg",
+        "timestamp": "2025-11-21T13:17:34.773140",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_134218",
+        "filename": "openmv_20251121_134218.jpg",
+        "path": "received_images\\openmv_20251121_134218.jpg",
+        "timestamp": "2025-11-21T13:42:20.310797",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "52e0333a-c429-47c5-987a-b4ea159e254e",
+        "filename": "openmv_20251121_134218.jpg",
+        "path": "received_images\\openmv_20251121_134218.jpg",
+        "timestamp": "2025-11-21T13:42:25.489363",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
+    },
+    {
+        "sample_id": "openmv_144953",
+        "filename": "openmv_20251121_144953.jpg",
+        "path": "received_images\\openmv_20251121_144953.jpg",
+        "timestamp": "2025-11-21T14:49:54.785686",
+        "bacteria": "E_COLI",
+        "notes": "capture_from_openmv"
+    },
+    {
+        "sample_id": "3f70504e-aaa8-432e-8014-4b8164a70964",
+        "filename": "openmv_20251121_144953.jpg",
+        "path": "received_images\\openmv_20251121_144953.jpg",
+        "timestamp": "2025-11-21T14:50:41.348111",
+        "bacteria": "E_COLI",
+        "notes": "upload_image"
     }
 ]
